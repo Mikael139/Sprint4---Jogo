@@ -44,17 +44,17 @@
     const nomeKey = e.key;
     console.log(nomeKey);
     switch (nomeKey) {
-      case 'h':
-        moveLeft = true;
+      case 'ArrowLeft':
+        moveLeft = false;
         break;
-      case 'u':
-        moveUp = true;
+      case 'ArrowUp':
+        moveUp = false;
         break;
-      case 'k':
-        moveRight = true;
+      case 'ArrowRight':
+        moveRight = false;
         break;
-      case 'j':
-        moveDown = true;
+      case 'ArrowDown':
+        moveDown = false;
         break;
       case 'a':
         moveLeft2 = true;
@@ -75,16 +75,16 @@
   window.addEventListener('keyup', (e) => {
     const key = e.key;
     switch (key) {
-      case 'g':
+      case 'ArrowLeft':
         moveLeft = false;
         break;
-      case 'u':
+      case 'ArrowUp':
         moveUp = false;
         break;
-      case 'k':
+      case 'ArrowRight':
         moveRight = false;
         break;
-      case 'j':
+      case 'ArrowDown':
         moveDown = false;
         break;
       case 'a':
